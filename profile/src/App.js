@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import React from "react";
 import Home from "./pages/Home"
-import "./css/Scene.css"
+import About from "./pages/About"
+import "./css/scene.css"
 /**
  * 
  * @returns Vender CSs
@@ -9,12 +10,12 @@ import "./css/Scene.css"
 
 import "./vendor/icofont/icofont.min.css"
 
-const Scene = () => {
+const App = () => {
   return (
     <>
-      <Home/>
+      <About/>
     </>
   );
 };
 
-export default Scene;
+export default App;

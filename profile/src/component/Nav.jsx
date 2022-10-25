@@ -9,8 +9,17 @@ function NavBar() {
       <Container>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+            
+              <Navbar.Brand
+                href="/"
+                className="d-flex"
+                style={{ fontSize: "42px", color: "#ffffff" }}
+              >
+                Song Juan Juan
+              </Navbar.Brand>
+            
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#home">About</Nav.Link>
+            <Nav.Link href="#About">About</Nav.Link>
             <Nav.Link href="#link">Resume</Nav.Link>
             <Nav.Link href="#link">Services</Nav.Link>
             <Nav.Link href="#link">Profile</Nav.Link>

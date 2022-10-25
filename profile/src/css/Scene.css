@@ -62,7 +62,7 @@ h5 {
 }
 /**************************************************/
 /************navbar-nav*****************************/
-.me-auto a {
+.me-auto a{
     margin-left: 20px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
@@ -71,7 +71,7 @@ h5 {
     font-weight: 400;
 }
 
-.me-auto a:before {
+.me-auto a:not(.d-flex):before {
     content: "";
     position: absolute;
     width: 0;
@@ -83,23 +83,23 @@ h5 {
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
 }
-.me-auto a:hover:before, .me-auto .nav-link :hover > a:before, .me-auto .active > a:before {
+.me-auto a:not(.d-flex):hover:before, .me-auto .nav-link :hover > a:before, .me-auto .active > a:before {
     visibility: visible;
     width: 25px;
   }
   
-  .me-auto a:hover, .me-auto li:hover > a {
+  .me-auto a:not(.d-flex):hover, .me-auto li:hover > a {
     color: #fff;
     text-decoration: none;
   }
-  .me-auto a{
+  .me-auto a:not(.d-flex){
     font-weight: 400;
     transition: all 0.3s ease-out 0s;
     position: relative;
     z-index: 1;
   }
   
-  .me-auto a::after {
+  .me-auto a:not(.d-flex)::after {
     content: "";
     position: relative;
     display: inline-block;
@@ -115,3 +115,36 @@ h5 {
   
  
 /************navbar-nav*****************************/
+/************the other page nav*********************/
+.about-nav{
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+}
+.fix-top{
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+ .d-flex{
+    float: left;
+    margin-top: -13px;
+    padding: 0;
+
+
+}
+a.d-flex:hover{
+   color: #18d26e !important;
+   font-size: 43px !important;
+}
+.fix-top{
+ padding-top:  20px;
+   padding-bottom: 20px;
+ 
+}
+/********************************************************/
+/*******************CSS********About ***********************/
+.about{
+    text-align: center;
+}
