@@ -1,0 +1,117 @@
+body {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif;
+}
+
+/**************************************************/
+/*Home container*/
+.homeContainer {
+    text-align: center;
+    margin-top: 20%;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeContainer h1 {
+    font-size: 50px;
+}
+
+.homeContainer h3 {
+    font-size: 30px;
+}
+
+.homeContainer h3 span {
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #4aec13db;
+    text-decoration-thickness: 2px;
+}
+.homeContainer .social-links{
+    display: flex;
+    margin-top: 40px;
+}
+.homeContainer .social-links a{
+    font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+/**************************************************/
+/************navbar-nav*****************************/
+.me-auto a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.me-auto a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #18d26e;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.me-auto a:hover:before, .me-auto .nav-link :hover > a:before, .me-auto .active > a:before {
+    visibility: visible;
+    width: 25px;
+  }
+  
+  .me-auto a:hover, .me-auto li:hover > a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .me-auto a{
+    font-weight: 400;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .me-auto a::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    height: 5px;
+    width: 0;
+    border-radius: 16px;
+    background: #c95bf5;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+ 
+/************navbar-nav*****************************/

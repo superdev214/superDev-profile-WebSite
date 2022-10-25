@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import App from "./App"
+import Scene from "./Scene"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<Scene />);
