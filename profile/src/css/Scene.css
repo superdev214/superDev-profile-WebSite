@@ -189,9 +189,7 @@ h5 {
 
 /************navbar-nav*****************************/
 /************the other page nav*********************/
-.about {
-  background-color: #040404;
-}
+
 
 .fix-top {
   text-align: center;
@@ -219,16 +217,16 @@ a.d-flex:hover {
   color: #18d26e !important;
   font-size: 43px !important;
 }
-
 .fix-top {
   padding-top: 20px;
   padding-bottom: 20px;
-
+  width: 100%;
 }
 
-.fix-top h1 {
+.fix-top h1 a{
   line-height: 1;
   font-weight: 700;
+  font-size: 40px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -363,3 +361,60 @@ a.d-flex:hover {
   color: #fff;
 
 }
+/**************************RESUME**********************************/
+.resume-me-container {
+  background-color: black;
+  padding: 30px;
+  margin-top: 20px;
+  /* margin-left: auto; */
+  border-radius: 35px;
+}
+.resume-title{
+  font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.resume-item{
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+.resume-item::before{
+  content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #18d26e;
+    border: 2px solid #18d26e;
+}
+.resume-item h4{
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #18d26e;
+  margin-bottom: 10px;
+}
+em {
+  font-style: italic;
+}
+.resume-item p{
+  color: white;
+}
+.resume .resume-item h5 {
+  font-size: 23px;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/************************************Service********************************************/

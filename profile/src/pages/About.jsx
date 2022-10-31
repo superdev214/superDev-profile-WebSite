@@ -10,6 +10,7 @@ import Skill from "../component/skill";
 function About() {
   return (
     <div className="about">
+      
       <div className="container">
         <div className="fix-top">
           <h1>

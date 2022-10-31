@@ -1,27 +1,6 @@
-
-// import ProgressBar from "react-animated-progress-bar";
-// import React from "react";
-
-// const Skill = (props) => {
-//     return(
-//         <div className="skill">
-//             <span>{props.title}</span>
-//             <ProgressBar
-//                     width="100%"
-//                     height="8px"
-//                     rect
-//                     fontColor="white"
-//                     value={0}
-//                     rectPadding="1px"
-//                     rectBorderRadius="20px"
-//                     trackPathColor="transparent"
-//                     bgColor="grey"
-//                     trackBorderColor="white"
-//                     backgrondColor="red"
-//                   />
-//         </div>
-//     );
-// }
+/**
+ * Progress bar animation Component
+ */
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
