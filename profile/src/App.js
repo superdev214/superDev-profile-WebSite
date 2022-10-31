@@ -9,11 +9,11 @@ import "./css/scene.css"
  */
 
 import "./vendor/icofont/icofont.min.css"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
     <>
-      <About/>
+      <About />
     </>
   );
 };
