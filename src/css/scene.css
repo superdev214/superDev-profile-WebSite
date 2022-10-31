@@ -418,3 +418,10 @@ em {
   margin-bottom: 10px;
 }
 /************************************Service********************************************/
+.service-container {
+  background-color: black;
+  padding: 30px;
+  margin-top: 20px;
+  /* margin-left: auto; */
+  border-radius: 35px;
+}
