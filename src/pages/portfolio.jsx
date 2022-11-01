@@ -4,7 +4,11 @@ import NavBar from "../component/Nav";
 import ActiveList from "../component/portfolio-activate-list";
 import { useState } from "react";
 import WrapList from "../component/portfolio-wrap-list";
+import { useGlobalVariables } from "../hooks";
+
 const Portfolio = (props) => {
+  const {value1, setValue1} = useGlobalVariables();
+
   const ulList = [
     {
       index: 1,
@@ -84,8 +88,9 @@ const Portfolio = (props) => {
         <div className="fix-top">
           <h1>
             <a id="title" href="/">
-              SongJuanJuan
+              SongJuanJuan {value1}
             </a>
+            <button onClick={()=>setValue1("New Name")}>Button</button>
           </h1>
           <NavBar />
         </div>
