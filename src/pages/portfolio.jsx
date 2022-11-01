@@ -6,8 +6,8 @@ import { useState } from "react";
 import WrapList from "../component/portfolio-wrap-list";
 import { useGlobalVariables } from "../hooks";
 
-const Portfolio = (props) => {
-  const {value1, setValue1} = useGlobalVariables();
+const Portfolio = () => {
+  const {activeId, setActivate} = useGlobalVariables();
 
   const ulList = [
     {
@@ -88,9 +88,9 @@ const Portfolio = (props) => {
         <div className="fix-top">
           <h1>
             <a id="title" href="/">
-              SongJuanJuan {value1}
+              SongJuanJuan {activeId} 
             </a>
-            <button onClick={()=>setValue1("New Name")}>Button</button>
+          <button onClick={console.log(activeId)}>asdf</button>
           </h1>
           <NavBar />
         </div>
