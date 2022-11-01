@@ -1,8 +1,10 @@
 import React from "react";
 import { useGlobalVariables } from "../hooks";
+import { useBetween } from 'use-between';
 
+const useSharedGlobalVariables = () => useBetween(useGlobalVariables);
 const ListItem = (props) => {
-  const {activeId, setActivate} = useGlobalVariables();
+  const {activeId, setActivate} = useSharedGlobalVariables();
   return(
     <>
      <li

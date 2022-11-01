@@ -5,9 +5,11 @@ import ActiveList from "../component/portfolio-activate-list";
 import { useState } from "react";
 import WrapList from "../component/portfolio-wrap-list";
 import { useGlobalVariables } from "../hooks";
+import { useBetween } from 'use-between';
 
+const useSharedGlobalVariables = () => useBetween(useGlobalVariables);
 const Portfolio = () => {
-  const {activeId, setActivate} = useGlobalVariables();
+  const {activeId, setActivate} = useSharedGlobalVariables();
 
   const ulList = [
     {
