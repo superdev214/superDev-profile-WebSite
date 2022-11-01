@@ -522,13 +522,17 @@ em {
   .portfolio-item {
   margin-bottom: 30px;
 }
-
+.portfolio-wrap-onebyone
+{
+  visibility: visible;
+}
   .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+
 }
 
   .portfolio-wrap::before {

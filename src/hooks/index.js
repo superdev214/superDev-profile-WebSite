@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 export const useGlobalVariables = () => {
-  const [activeId, setActivate] = useState(1);
+  const [activeFilter, setActivate] = useState("*");
   const [value2, setValue2] = useState(null);
 
   return { 
-    activeId, setActivate, 
+    activeFilter, setActivate, 
     value2, setValue2
   };
 };

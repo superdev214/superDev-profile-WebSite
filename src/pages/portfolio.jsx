@@ -5,11 +5,12 @@ import ActiveList from "../component/portfolio-activate-list";
 import { useState } from "react";
 import WrapList from "../component/portfolio-wrap-list";
 import { useGlobalVariables } from "../hooks";
-import { useBetween } from 'use-between';
+import { useBetween } from "use-between";
+import { useCallback } from "react";
 
 const useSharedGlobalVariables = () => useBetween(useGlobalVariables);
 const Portfolio = () => {
-  const {activeId, setActivate} = useSharedGlobalVariables();
+  const { activeFilter, setActivate } = useSharedGlobalVariables();
 
   const ulList = [
     {
@@ -19,80 +20,95 @@ const Portfolio = () => {
     },
     {
       index: 2,
-      filter: ".filter-Web",
+      filter: "filter-Web",
       name: "Web",
     },
     {
       index: 3,
-      filter: ".filter-Mobile-App",
+      filter: "filter-Mobile-App",
       name: "Mobile App",
     },
     {
       index: 4,
-      filter: ".filter-Blockchain",
+      filter: "filter-Blockchain",
       name: "Blockchain",
     },
     {
       index: 5,
-      filter: ".filter-UXUI",
+      filter: "filter-UXUI",
       name: "UX/UI desing",
-    }
+    },
   ];
   const wrList = [
     {
       urlIndex: 6,
-      title:"Upbots Crypto Trading Bots"
+      title: "Upbots Crypto Trading Bots",
+      filter: ["filter-Web", "filter-Blockchain"],
     },
     {
       urlIndex: 2,
-      title:"Wagerr sportsbook"
+      title: "Wagerr sportsbook",
+      filter: ["filter-Web", "filter-Blockchain"],
     },
     {
       urlIndex: 4,
-      title:"FTI Ticketshop"
+      title: "FTI Ticketshop",
+      filter: ["filter-Web"],
     },
     {
       urlIndex: 3,
-      title:"PaulWagner Life & Business Coach"
+      title: "PaulWagner Life & Business Coach",
+      filter: ["filter-Web", "filter-Mobile-App"],
     },
     {
       urlIndex: 1,
-      title:"China Mobile International Limited (CMI)"
+      title: "China Mobile International Limited (CMI)",
+      filter: ["filter-Web"],
     },
     {
       urlIndex: 7,
-      title:"UX/UI Design"
+      title: "UX/UI Design",
+      filter: ["filter-UXUI"],
     },
     {
       urlIndex: 8,
-      title:"Cybur AI Web page builder"
+      title: "Cybur AI Web page builder",
+      filter: ["filter-Web"],
     },
     {
       urlIndex: 9,
-      title:"IWIN CRYPTO CASINO"
+      title: "IWIN CRYPTO CASINO",
+      filter: ["filter-Web", "filter-Blockchain"],
     },
     {
       urlIndex: 11,
-      title:"Tina Maids House Cleaning Services"
+      title: "Tina Maids House Cleaning Services",
+      filter: ["filter-Mobile-App"],
     },
     {
       urlIndex: 12,
-      title:"Penny Watchers"
+      title: "Penny Watchers",
+      filter: ["filter-Mobile-App"],
     },
     {
       urlIndex: 13,
-      title:"Tripshop Hotel Booking platform"
-    }
+      title: "Tripshop Hotel Booking platform",
+      filter: ["filter-Web"],
+    },
   ];
+  const filterArray = useCallback(() => {
+    console.log(activeFilter);
+    return activeFilter === "*" ?  wrList : wrList.filter((item) =>item.filter.includes(activeFilter));
+  }, [activeFilter]);
+
   return (
     <div className="profile">
       <div className="container">
         <div className="fix-top">
           <h1>
             <a id="title" href="/">
-              SongJuanJuan {activeId} 
+              SongJuanJuan
             </a>
-          <button onClick={console.log(activeId)}>asdf</button>
           </h1>
           <NavBar />
         </div>
@@ -105,10 +121,11 @@ const Portfolio = () => {
               <h2>PORTFOLIO</h2>
               <p>MY WORKS</p>
             </div>
-            <ActiveList list = {ulList}/>
-            <WrapList list = {wrList}/>
+            <ActiveList list={ulList} />
+            <WrapList
+              list={  filterArray()}
+            />
           </div>
-          
         </Container>
       </div>
     </div>
