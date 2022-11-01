@@ -109,7 +109,7 @@ const Contact = () => {
                 </Form.Group>
 
                 <Form.Group className="message" controlId="formGridSubject">
-                  <textarea placeholder="Message">asdf</textarea>
+                  <textarea placeholder="Message"></textarea>
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
