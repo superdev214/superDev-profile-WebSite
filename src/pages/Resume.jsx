@@ -81,16 +81,15 @@ const Resume = () => {
                     <p>
                       <em>Los Angeles, United States</em>
                     </p>
-                    <p>
-                      <ul>
-                        <li>
-                          Easy & Secure Crypto Trading, For Everyone. No matter
-                          your skill or experience, UpBots is your gateway to
-                          crypto. A trading platform where everyone wins or
-                          nobody does.
-                        </li>
-                      </ul>
-                    </p>
+
+                    <ul>
+                      <li>
+                       <p> Easy & Secure Crypto Trading, For Everyone. No matter
+                        your skill or experience, UpBots is your gateway to
+                        crypto. A trading platform where everyone wins or nobody
+                        does.</p>
+                      </li>
+                    </ul>
                   </div>
                   <div class="resume-item">
                     <h4>Project Manager</h4>
@@ -99,11 +98,11 @@ const Resume = () => {
                     <p>
                       <em>Colorado, United States</em>
                     </p>
-                    <p>
+                    
                       <ul>
-                        <li>https://www.paulwagner.com/</li>
+                       <p> <li>https://www.paulwagner.com/</li></p>
                       </ul>
-                    </p>
+                    
                   </div>
                   <div class="resume-item">
                     <h4>Back-end Developer</h4>
@@ -112,15 +111,15 @@ const Resume = () => {
                     <p>
                       <em>Germany</em>
                     </p>
-                    <p>
+                    
                       <ul>
                         <li>
-                          As one of the largest airline consolidators, we issue
+                         <p>As one of the largest airline consolidators, we issue
                           all airline tickets for travel agencies with/without
-                          their own IATA license.
+                          their own IATA license.</p> 
                         </li>
                       </ul>
-                    </p>
+                    
                   </div>
                   <div class="resume-item">
                     <h4>UX & Front-end engineer</h4>
@@ -129,15 +128,15 @@ const Resume = () => {
                     <p>
                       <em>Hong Kong SAR</em>
                     </p>
-                    <p>
+                    
                       <ul>
                         <li>
-                          Wagerr is a permissionless blockchain-based sportsbook
+                         <p> Wagerr is a permissionless blockchain-based sportsbook
                           secured by a global decentralized network. Bet
-                          anywhere. Best odds. Privacy-focused.
+                          anywhere. Best odds. Privacy-focused.</p>
                         </li>
                       </ul>
-                    </p>
+                    
                   </div>
                   <div class="resume-item">
                     <h4>Frontend Developer</h4>
@@ -146,17 +145,17 @@ const Resume = () => {
                     <p>
                       <em>Beijing, China</em>
                     </p>
-                    <p>
+                    
                       <ul>
                         <li>
-                          Like many major Chinese companies, China Mobile Ltd.
+                         <p> Like many major Chinese companies, China Mobile Ltd.
                           is state-owned. The company is primarily a mobile
                           service provider, not a software designer, but it does
                           boast a large software team among its over 450,000
-                          employees.
+                          employees.</p>
                         </li>
                       </ul>
-                    </p>
+                    
                   </div>
                 </Col>
               </Row>

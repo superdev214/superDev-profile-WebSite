@@ -12,13 +12,7 @@ import { useState, useEffect} from "react";
 
   });
 
-  useCountUp({
-    ref: "counter_" + props.index,
-    start: startValue,
-    end: props.ed,
-    enableScrollSpy: true,
-    scrollSpyDelay: 1
-  });
+ 
 
   useEffect(() => {
     if (inView && flag === "true") {
@@ -38,5 +32,12 @@ import { useState, useEffect} from "react";
       <span id={`counter_${props.index}`} />
     </div>
   );
+  useCountUp({
+    ref: "counter_" + props.index,
+    start: startValue,
+    end: props.ed,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1
+  });
 }
 export default Counter;
