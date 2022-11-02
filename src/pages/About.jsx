@@ -10,14 +10,16 @@ import Skill from "../component/skill";
 function About() {
   return (
     <div className="about">
-      
-      <div className="container">
-        <div className="fix-top">
+      <div className="fix-top">
+        <Container className="fix-top">
+          {" "}
           <h1>
-            <a id="title" href="/">SongJuanJuan</a>
+            <a id="title" href="/">
+              SongJuanJuan
+            </a>
           </h1>
           <NavBar />
-        </div>
+        </Container>
       </div>
       <div className="section">
         <Container>
@@ -185,28 +187,28 @@ function About() {
                 <h2>SKILLS</h2>
               </div>
               <Row>
-              <Col sm={6}>
-               <Skill title = "REACT JS" target = "100"/>
-               <Skill title = "VUE JS" target = "100"/>
-               <Skill title = "ANGULAR" target = "95"/>
-               <Skill title = "NODE JS" target = "100"/>
-               <Skill title = "PHP" target = "100"/>
-               <Skill title = "lARAVEL" target = "100"/>
-               <Skill title = "GOLANG" target = "90"/>
-               <Skill title = "AWS" target = "90"/>
-               <Skill title = "FIGMA" target = "100"/>
-              </Col>
-              <Col sm={6}>
-               <Skill title = "REACT NATIVE" target = "100"/>
-               <Skill title = "JAVA/KOTLIN" target = "80"/>
-               <Skill title = "SWIFT" target = "80"/>
-               <Skill title = "C#" target = "80"/>
-               <Skill title = "QT" target = "80"/>
-               <Skill title = "MONGODB" target = "100"/>
-               <Skill title = "MYSQL" target = "90"/>
-               <Skill title = "DOCKER" target = "90"/>
-               <Skill title = "ADOBE XD" target = "100"/>
-              </Col>
+                <Col sm={6}>
+                  <Skill title="REACT JS" target="100" />
+                  <Skill title="VUE JS" target="100" />
+                  <Skill title="ANGULAR" target="95" />
+                  <Skill title="NODE JS" target="100" />
+                  <Skill title="PHP" target="100" />
+                  <Skill title="lARAVEL" target="100" />
+                  <Skill title="GOLANG" target="90" />
+                  <Skill title="AWS" target="90" />
+                  <Skill title="FIGMA" target="100" />
+                </Col>
+                <Col sm={6}>
+                  <Skill title="REACT NATIVE" target="100" />
+                  <Skill title="JAVA/KOTLIN" target="80" />
+                  <Skill title="SWIFT" target="80" />
+                  <Skill title="C#" target="80" />
+                  <Skill title="QT" target="80" />
+                  <Skill title="MONGODB" target="100" />
+                  <Skill title="MYSQL" target="90" />
+                  <Skill title="DOCKER" target="90" />
+                  <Skill title="ADOBE XD" target="100" />
+                </Col>
               </Row>
             </div>
           </div>

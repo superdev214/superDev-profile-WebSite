@@ -12,7 +12,15 @@ import { useState, useEffect} from "react";
 
   });
 
+   useCountUp({
+    ref: "counter_" + props.index,
+    start: 0,
+    end: props.ed,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1,
+    separator: ",",
  
+  });
 
   useEffect(() => {
     if (inView && flag === "true") {
@@ -26,18 +34,12 @@ import { useState, useEffect} from "react";
 
   return (
     <div className="App" ref={ref}>
-      <div className="content" />
+      {/* <div className="content"/> */}
       {/* <CountUp start={startValue} end={100} enableScrollSpy /> */}
 
-      <span id={`counter_${props.index}`} />
+      <span id={`counter_${props.index}`}/>
     </div>
   );
-  useCountUp({
-    ref: "counter_" + props.index,
-    start: startValue,
-    end: props.ed,
-    enableScrollSpy: true,
-    scrollSpyDelay: 1
-  });
+
 }
 export default Counter;

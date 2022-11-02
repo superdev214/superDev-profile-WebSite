@@ -103,15 +103,16 @@ const Portfolio = () => {
 
   return (
     <div className="profile">
-      <div className="container">
-        <div className="fix-top">
+    <div className="fix-top">
+        <Container className="fix-top">
+          {" "}
           <h1>
             <a id="title" href="/">
               SongJuanJuan
             </a>
           </h1>
           <NavBar />
-        </div>
+        </Container>
       </div>
       {/* Service container */}
       <div className="section">

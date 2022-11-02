@@ -281,7 +281,7 @@
 .fix-top {
   text-align: center;
   background-color: black;
-  opacity: 0.8;
+
   display: flex;
   padding-left: auto;
   padding-right: auto;
@@ -299,14 +299,16 @@
 
 
 }
-
+.fix-top .navbar .me-auto{
+  margin-top: 0 !important;
+}
 a.d-flex:hover {
   color: #18d26e !important;
   font-size: 43px !important;
 }
 .fix-top {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 100%;
 }
 
@@ -321,11 +323,14 @@ a.d-flex:hover {
 
 /********************************************************/
 /*******************CSS********About ***********************/
-
+.section{
+  position: absolute;
+  top: 100px;
+}
 .about-me-container {
   background-color: black;
   padding: 30px;
-  margin-top: 30px;
+
   /* margin-left: auto; */
   border-radius: 35px;
 }
@@ -452,7 +457,7 @@ a.d-flex:hover {
 .resume-me-container {
   background-color: black;
   padding: 30px;
-  margin-top: 20px;
+
   /* margin-left: auto; */
   border-radius: 35px;
 }
@@ -468,6 +473,9 @@ a.d-flex:hover {
   margin-top: -2px;
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
+}
+.resume-item ul{
+  color:white;
 }
 .resume-item::before{
   content: "";
@@ -508,18 +516,19 @@ em {
 .service-container {
   background-color: black;
   padding: 30px;
-  margin-top: 20px;
+
   /* margin-left: auto; */
   border-radius: 35px;
 }
 .icon-box {
   text-align: center;
   align-items: center;
-  padding: 20px;
+  padding: 80px 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
   color: white;
   margin: 20px;
+
 }
 .icon-box:hover {
   background: #18d26e !important;
@@ -572,7 +581,7 @@ em {
 .portfolio-container {
   background-color: black;
   
-
+  padding: 30px;
   border-radius: 35px;
 }
  #portfolio-flters li {
@@ -735,7 +744,7 @@ em {
 .contact-me-container {
   background-color: black;
   padding: 30px;
-  margin-top: 30px;
+
   /* margin-left: auto; */
   border-radius: 35px;
 }
@@ -793,12 +802,22 @@ em {
 form{
   background-color: rgba(255, 255, 255, 0.08) !important;
   text-align: center !important;
-  padding: 10px !important;
+  padding: 30px !important;
 }
 textarea{
   width: 100%;
   background-color: rgba(255, 255, 255, 0.08) !important;
   color: white;
-  height: 78px;
-  border-radius: 10px;
+  height: 100px;
+  border: none;
+}
+.form-control{
+  border-radius: 0 !important;
+  border: rgba(255, 255, 255, 0.08) !important;;
+}
+.btn{
+  background: #18d26e !important;
+  border: none !important;
+  padding: 10px 30px !important;
+  margin-top: 1rem !important;
 }

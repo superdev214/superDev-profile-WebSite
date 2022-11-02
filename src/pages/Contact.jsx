@@ -5,15 +5,16 @@ import NavBar from "../component/Nav";
 const Contact = () => {
   return (
     <div className="contact">
-      <div className="container">
-        <div className="fix-top">
+     <div className="fix-top">
+        <Container className="fix-top">
+          {" "}
           <h1>
             <a id="title" href="/">
               SongJuanJuan
             </a>
           </h1>
           <NavBar />
-        </div>
+        </Container>
       </div>
       {/**Resume container */}
       <div className="section">
