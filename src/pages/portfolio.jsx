@@ -7,6 +7,7 @@ import WrapList from "../component/portfolio-wrap-list";
 import { useGlobalVariables } from "../hooks";
 import { useBetween } from "use-between";
 import { useCallback } from "react";
+import ControlledCarousel from "../component/ControlledCarousel";
 
 const useSharedGlobalVariables = () => useBetween(useGlobalVariables);
 const Portfolio = () => {
@@ -41,63 +42,74 @@ const Portfolio = () => {
   ];
   const wrList = [
     {
+      index:1,
       urlIndex: 6,
       title: "Upbots Crypto Trading Bots",
       filter: ["filter-Web", "filter-Blockchain"],
     },
     {
+      index:2,
       urlIndex: 2,
       title: "Wagerr sportsbook",
       filter: ["filter-Web", "filter-Blockchain"],
     },
     {
+      index:3,
       urlIndex: 4,
       title: "FTI Ticketshop",
       filter: ["filter-Web"],
     },
     {
+      index:4,
       urlIndex: 3,
       title: "PaulWagner Life & Business Coach",
       filter: ["filter-Web", "filter-Mobile-App"],
     },
     {
+      index:5,
       urlIndex: 1,
       title: "China Mobile International Limited (CMI)",
       filter: ["filter-Web"],
     },
     {
+      index:6,
       urlIndex: 7,
       title: "UX/UI Design",
       filter: ["filter-UXUI"],
     },
     {
+      index:7,
       urlIndex: 8,
       title: "Cybur AI Web page builder",
       filter: ["filter-Web"],
     },
     {
+      index:8,
       urlIndex: 9,
       title: "IWIN CRYPTO CASINO",
       filter: ["filter-Web", "filter-Blockchain"],
     },
     {
+      index:9,
       urlIndex: 11,
       title: "Tina Maids House Cleaning Services",
       filter: ["filter-Mobile-App"],
     },
     {
+      index:10,
       urlIndex: 12,
       title: "Penny Watchers",
       filter: ["filter-Mobile-App"],
     },
     {
+      index:11,
       urlIndex: 13,
       title: "Tripshop Hotel Booking platform",
       filter: ["filter-Web"],
     },
   ];
   const filterArray = useCallback(() => {
-    console.log(activeFilter);
+  
     return activeFilter === "*"
       ? wrList
       : wrList.filter((item) => item.filter.includes(activeFilter));
@@ -124,22 +136,15 @@ const Portfolio = () => {
               <h2>PORTFOLIO</h2>
               <p>MY WORKS</p>
             </div>
+         
             <ActiveList list={ulList} />
             <WrapList list={filterArray()} />
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-            <script src="vendor/php-email-form/validate.js"></script>
-            <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
-            <script src="vendor/counterup/counterup.min.js"></script>
-            <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-            <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-            <script src="vendor/venobox/venobox.min.js"></script>
-
-            <script src="vendor/js/main.js"></script>
+   
           </div>
         </Container>
+       
       </div>
+      <ControlledCarousel urllist={filterArray()}/>
     </div>
   );
 };

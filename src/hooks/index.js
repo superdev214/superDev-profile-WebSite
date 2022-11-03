@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 
 export const useGlobalVariables = () => {
   const [activeFilter, setActivate] = useState("*");
-  const [value2, setValue2] = useState(null);
-  const [activeNavItem, setClassActive] = useState("Home");
 
+  const [activeNavItem, setClassActive] = useState("Home");
+  const [imageVisible, setImageActive] = useState(false);
+  const [imageChooseUrl, setimageChooseUrl] = useState(1);
   return { 
     activeFilter, setActivate, 
-    value2, setValue2,
-    activeNavItem, setClassActive
+    imageChooseUrl, setimageChooseUrl,
+    activeNavItem, setClassActive,
+    imageVisible,setImageActive
   };
 };

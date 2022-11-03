@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import NavBar from "../component/Nav";
-import Icon_Box from "../component/service-icon-box";
+import ICON_BOX from "../component/service-icon-box";
 const Service = () => {
   return (
     <div className="service">
@@ -27,31 +27,31 @@ const Service = () => {
             <Row>
               <Col sm={4}>
                 {" "}
-                <Icon_Box
+                <ICON_BOX
                   class="icofont-dashboard-web"
                   target="Web Development"
                   detail="Bots Trading | Sports Betting | Booking System"
                 />
-                <Icon_Box
+                <ICON_BOX
                   class="icofont-stock-mobile"
                   target="Mobile App Development"
                   detail="Online dating app | Delivery app | Fitness app | Online shopping app"
                 />
               </Col>
               <Col sm={4}>
-                <Icon_Box
+                <ICON_BOX
                   class="icofont-bitcoin"
                   target="Blockchain"
                   detail="Defi and Dapps platform| Smart contracts | NFT"
                 />
-                <Icon_Box
+                <ICON_BOX
                   class="icofont-behance"
                   target="UX/UI Design"
                   detail="User research | Ideation & Information architecture | Wireframing & Prototyping | Usability testing"
                 />
               </Col>
               <Col sm={4}>
-                <Icon_Box
+                <ICON_BOX
                   class="icofont-presentation"
                   target="Business Model design"
                   detail="B2B | B2C | C2B | C2C"

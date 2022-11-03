@@ -27,6 +27,7 @@ const Contact = () => {
 
             <Row>
               <Col md={6} xs={12}>
+             
                 <div className="contact-template">
                   <div class="info-box">
                     <i class="bx bx-map"></i>
@@ -93,6 +94,7 @@ const Contact = () => {
                     <p>+86 182 4255 0239</p>
                   </div>
                 </div>
+
               </Col>
               <Form>
                 <Row className="mb-3">

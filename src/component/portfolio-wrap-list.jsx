@@ -8,7 +8,7 @@ const WrapList = (props) => {
         <div className="wraplist">
             <Row>
               {wrList.map((list)=>(
-                <WrapListItem url={list.urlIndex} key={list.urlIndex} title={list.title}/>
+                <WrapListItem url={list.urlIndex} key={list.urlIndex} title={list.title} index={list.index}/>
               ))}
             </Row>
         </div>

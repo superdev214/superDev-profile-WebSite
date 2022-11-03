@@ -21,6 +21,7 @@ import "./css/scene.css";
 import "./vendor/icofont/icofont.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./pages/Contact";
+
 const App = () => {
   return (
     <div>
@@ -35,6 +36,8 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
+
+
     </div>
   );
 };
