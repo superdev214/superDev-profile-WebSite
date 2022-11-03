@@ -46,66 +46,77 @@ const Portfolio = () => {
       urlIndex: 6,
       title: "Upbots Crypto Trading Bots",
       filter: ["filter-Web", "filter-Blockchain"],
+      address:"https://upbots.com/"
     },
     {
       index:2,
       urlIndex: 2,
       title: "Wagerr sportsbook",
       filter: ["filter-Web", "filter-Blockchain"],
+      address:"https://wagerr.com/"
     },
     {
       index:3,
       urlIndex: 4,
       title: "FTI Ticketshop",
       filter: ["filter-Web"],
+      address:"https://www.fti-ticketshop.de/"
     },
     {
       index:4,
       urlIndex: 3,
       title: "PaulWagner Life & Business Coach",
       filter: ["filter-Web", "filter-Mobile-App"],
+      address:"https://www.paulwagner.com/"
     },
     {
       index:5,
       urlIndex: 1,
       title: "China Mobile International Limited (CMI)",
       filter: ["filter-Web"],
+      address:"https://www.chinamobileltd.com/en/global/home.php"
     },
     {
       index:6,
       urlIndex: 7,
       title: "UX/UI Design",
       filter: ["filter-UXUI"],
+      address:"https://www.behance.net/songjuan91"
     },
     {
       index:7,
       urlIndex: 8,
       title: "Cybur AI Web page builder",
       filter: ["filter-Web"],
+      address:"https://cybur.ai/"
     },
     {
       index:8,
       urlIndex: 9,
       title: "IWIN CRYPTO CASINO",
       filter: ["filter-Web", "filter-Blockchain"],
+      address:"https://www.iwincrypto.casino/"
     },
     {
       index:9,
       urlIndex: 11,
       title: "Tina Maids House Cleaning Services",
       filter: ["filter-Mobile-App"],
+      address:"https://apps.apple.com/us/app/tina-maids/id1414569418"
     },
     {
       index:10,
       urlIndex: 12,
       title: "Penny Watchers",
       filter: ["filter-Mobile-App"],
+      address:"https://apps.apple.com/us/app/pennywatchers/id790781808"
     },
     {
       index:11,
       urlIndex: 13,
       title: "Tripshop Hotel Booking platform",
       filter: ["filter-Web"],
+      address:"https://www.tripshop.com/"
     },
   ];
   const filterArray = useCallback(() => {

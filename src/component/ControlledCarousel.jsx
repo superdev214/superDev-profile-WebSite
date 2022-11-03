@@ -36,10 +36,11 @@ function ControlledCarousel(props) {
     >
 <CloseButton className="imgDivClose" variant="white" onClick={()=>setImageActive(false)}></CloseButton>
       <Carousel activeIndex={imageChooseUrl} onSelect={handleSelect} interval={null}>
-        {wrList.map((item) => (
-          <Carousel.Item>
+        {wrList.map((item,index) => (
+          <Carousel.Item  key = {index}>
             <img
               className="d-block"
+             
               src={`assets/img/portfolio/web_dev/Screenshot_${item.urlIndex}.png`}
               alt="First slide"
               style={{

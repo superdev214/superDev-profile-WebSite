@@ -92,7 +92,7 @@ const Resume = () => {
                       </li>
                     </ul>
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>Project Manager</h4>
                     <h5>Dec 2019 - Jun 2021</h5>
                     <p>PaulWagner.com</p>
@@ -105,7 +105,7 @@ const Resume = () => {
                       </ul>
                     
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>Back-end Developer</h4>
                     <h5>Jun 2020 - Nov 2020</h5>
                     <p>FTI Ticketshop GmbH</p>
@@ -122,7 +122,7 @@ const Resume = () => {
                       </ul>
                     
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>UX & Front-end engineer</h4>
                     <h5>Nov 2018 - May 2020</h5>
                     <p>Wagerr</p>
@@ -139,7 +139,7 @@ const Resume = () => {
                       </ul>
                     
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>Frontend Developer</h4>
                     <h5>Nov 2012 - May 2018</h5>
                     <p>China Mobile</p>

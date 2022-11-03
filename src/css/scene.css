@@ -175,7 +175,9 @@ h6 {
     align-items: center;
   }
 }
-
+.fix-top h1{
+  font-size: 36px !important;
+}
 #header.header-top {
   height: 80px;
   position: fixed;
@@ -332,6 +334,10 @@ h6 {
 .fix-top h1 {
   margin-right: auto;
   font-size: 36px;
+  line-height: 1;
+  font-weight: 700 !important;
+
+  font-family: "Poppins", sans-serif !important;
 }
 
 .d-flex {
@@ -357,12 +363,6 @@ a.d-flex:hover {
   width: 100%;
 }
 
-.fix-top h1 a {
-  line-height: 1;
-  font-weight: 700;
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-}
 
 
 
@@ -373,13 +373,18 @@ a.d-flex:hover {
   top: 100px;
   transition: ease-in-out 0.4s;
 }
-
+.section ul{
+  padding: 0;
+}
+.section ul li{
+  padding-bottom: 10px;
+}
 .about-me-container {
   background-color: black;
   padding: 30px;
 
   /* margin-left: auto; */
-  border-radius: 35px;
+
 }
 
 .section-title h2 {
@@ -518,7 +523,7 @@ a.d-flex:hover {
   padding: 30px;
 
   /* margin-left: auto; */
-  border-radius: 35px;
+
 }
 
 .resume-title {
@@ -586,7 +591,7 @@ em {
   padding: 30px;
 
   /* margin-left: auto; */
-  border-radius: 35px;
+
 }
 
 .icon-box {
@@ -656,7 +661,7 @@ em {
   background-color: black;
 
   padding: 30px;
-  border-radius: 35px;
+
 }
 
 #portfolio-flters li {
@@ -829,7 +834,7 @@ em {
   padding: 30px;
 
   /* margin-left: auto; */
-  border-radius: 35px;
+
 }
 
 .info-box {
@@ -876,8 +881,11 @@ em {
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
-}
 
+}
+.social-links a{
+  text-decoration: none;
+}
 .info-box .social-links a:hover {
   color: #18d26e;
 }

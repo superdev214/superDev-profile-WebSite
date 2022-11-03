@@ -36,25 +36,25 @@ function About() {
                     <img src={my} alt="asdf" />
                   </Col>
                   <Col sm={8}>
-                    <h2>Blockchain Specialist & Full Stack Expert</h2> <br></br>
+                    <h2>Blockchain Specialist & Full Stack Expert</h2>
                     <Row>
                       <Col sm={6}>
                         <ul>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>Birthday:</strong> 20 Jan 1991
                           </li>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>Website:</strong>{" "}
                             https://github.com/jeydev310
                           </li>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>Phone:</strong> +86 182 4255 0239
                           </li>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>City:</strong> City : Shenyang, LiaoNing,
                             China
                           </li>
@@ -63,19 +63,19 @@ function About() {
                       <Col sm={6}>
                         <ul>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>Age:</strong> 31
                           </li>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>Degree:</strong> Bachelor
                           </li>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>Email:</strong> juanjs120@outlook.com
                           </li>
                           <li>
-                            <i class="icofont-rounded-right"></i>{" "}
+                            <i className="icofont-rounded-right"></i>{" "}
                             <strong>Full time job:</strong> Available
                           </li>
                         </ul>
@@ -153,28 +153,28 @@ function About() {
               <Row>
                 <Col sm={3}>
                   <div className="count-box">
-                    <i class="icofont-simple-smile"></i>
+                    <i className="icofont-simple-smile"></i>
                     <Counter ed="23" index={1}></Counter>
                     <p>Happy Client</p>
                   </div>
                 </Col>
                 <Col sm={3}>
                   <div className="count-box">
-                    <i class="icofont-document-folder"></i>
+                    <i className="icofont-document-folder"></i>
                     <Counter ed="42" index={2}></Counter>
                     <p>Projects</p>
                   </div>
                 </Col>
                 <Col sm={3}>
                   <div className="count-box">
-                    <i class="icofont-live-support"></i>
+                    <i className="icofont-live-support"></i>
                     <Counter ed="1463" index={3}></Counter>
                     <p>Hours of Support</p>
                   </div>
                 </Col>
                 <Col sm={3}>
                   <div className="count-box">
-                    <i class="icofont-users-alt-5"></i>
+                    <i className="icofont-users-alt-5"></i>
                     <Counter ed="3" index={4} />
                     <p>Hard Workers</p>
                   </div>

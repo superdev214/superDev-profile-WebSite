@@ -12,17 +12,17 @@ const Home = () => {
         </h2>
          <NavBar /> 
         <div className="social-links">
-          <a href="/" class="linkedin" target="_blank">
-            <i class="icofont-linkedin"></i>
+          <a href="/" className="linkedin" target="_blank">
+            <i className="icofont-linkedin"></i>
           </a>
-          <a href="/" target="_blank" class="twitter">
-            <i class="icofont-twitter"></i>
+          <a href="/" target="_blank" className="twitter">
+            <i className="icofont-twitter"></i>
           </a>
-          <a href="/" class="facebook" target="_blank">
-            <i class="icofont-facebook"></i>
+          <a href="/" className="facebook" target="_blank">
+            <i className="icofont-facebook"></i>
           </a>
-          <a href="/" target="_blank" class="twitter">
-            <i class="icofont-github"></i>
+          <a href="/" target="_blank" className="twitter">
+            <i className="icofont-github"></i>
           </a>
         </div>
       </Container>

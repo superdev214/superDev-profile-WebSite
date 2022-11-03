@@ -29,8 +29,8 @@ const Contact = () => {
               <Col md={6} xs={12}>
              
                 <div className="contact-template">
-                  <div class="info-box">
-                    <i class="bx bx-map"></i>
+                  <div className="info-box">
+                    <i className="bx bx-map"></i>
                     <h3>My Address</h3>
                     <p>
                       Tai Yean Jie Shang Quan, Lanzhou St, Shenyang, Liaoning,
@@ -41,36 +41,36 @@ const Contact = () => {
               </Col>
               <Col md={6} xs={12}>
                 <div className="contact-template">
-                  <div class="info-box">
-                    <i class="bx bx-share-alt"></i>
+                  <div className="info-box">
+                    <i className="bx bx-share-alt"></i>
                     <h3>Social Profiles</h3>
-                    <div class="social-links">
+                    <div className="social-links">
                       <a
                         href="https://www.linkedin.com/in/song-juanjuan-39b8611b2/"
-                        class="linkedin"
+                        className="linkedin"
                       >
-                        <i class="icofont-linkedin"></i>
+                        <i className="icofont-linkedin"></i>
                       </a>
                       <a
                         href="https://twitter.com/juanjuan_song"
-                        class="twitter"
+                        className="twitter"
                       >
-                        <i class="icofont-twitter"></i>
+                        <i className="icofont-twitter"></i>
                       </a>
                       <a
                         href="https://www.facebook.com/profile.php?id=100076066340705"
-                        class="facebook"
+                        className="facebook"
                       >
-                        <i class="icofont-facebook"></i>
+                        <i className="icofont-facebook"></i>
                       </a>
-                      <a href="https://github.com/jeydev310" class="twitter">
-                        <i class="icofont-github"></i>
+                      <a href="https://github.com/jeydev310" className="twitter">
+                        <i className="icofont-github"></i>
                       </a>
                       <a
                         href="https://www.behance.net/songjuan91"
-                        class="twitter"
+                        className="twitter"
                       >
-                        <i class="icofont-behance"></i>
+                        <i className="icofont-behance"></i>
                       </a>
                     </div>
                   </div>
@@ -78,8 +78,8 @@ const Contact = () => {
               </Col>
               <Col md={6} xs={12}>
                 <div className="contact-template">
-                  <div class="info-box">
-                    <i class="bx bx-envelope"></i>
+                  <div className="info-box">
+                    <i className="bx bx-envelope"></i>
                     <h3>Email Me</h3>
                     <p>juanjs120@outlook.com</p>
                   </div>
@@ -88,8 +88,8 @@ const Contact = () => {
               <Col md={6} xs={12}>
                 <div className="contact-template">
                   {" "}
-                  <div class="info-box">
-                    <i class="bx bx-phone-call"></i>
+                  <div className="info-box">
+                    <i className="bx bx-phone-call"></i>
                     <h3>Call Me</h3>
                     <p>+86 182 4255 0239</p>
                   </div>

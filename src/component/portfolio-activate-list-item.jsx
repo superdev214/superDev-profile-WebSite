@@ -11,7 +11,7 @@ const ListItem = (props) => {
           key={props.index}
           data-filter={props.filter}
           index = {props.index}
-          class={activeFilter === props.filter ? "filter-active" : "null"}          
+          className={activeFilter === props.filter ? "filter-active" : "null"}          
           onClick = {() => {setActivate(props.filter) ;  }}
         >
           {props.name}
