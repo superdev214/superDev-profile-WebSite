@@ -98,12 +98,14 @@ const Portfolio = () => {
   ];
   const filterArray = useCallback(() => {
     console.log(activeFilter);
-    return activeFilter === "*" ?  wrList : wrList.filter((item) =>item.filter.includes(activeFilter));
+    return activeFilter === "*"
+      ? wrList
+      : wrList.filter((item) => item.filter.includes(activeFilter));
   }, [activeFilter]);
 
   return (
     <div className="profile">
-    <div className="fix-top">
+      <div className="fix-top">
         <Container className="fix-top">
           {" "}
           <h1>
@@ -123,9 +125,18 @@ const Portfolio = () => {
               <p>MY WORKS</p>
             </div>
             <ActiveList list={ulList} />
-            <WrapList
-              list={  filterArray()}
-            />
+            <WrapList list={filterArray()} />
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+            <script src="vendor/php-email-form/validate.js"></script>
+            <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+            <script src="vendor/counterup/counterup.min.js"></script>
+            <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+            <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+            <script src="vendor/venobox/venobox.min.js"></script>
+
+            <script src="vendor/js/main.js"></script>
           </div>
         </Container>
       </div>
