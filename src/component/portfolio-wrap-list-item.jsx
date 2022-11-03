@@ -30,8 +30,8 @@ const WrapListItem = (props) => {
          
               <i class="bx bx-plus"
                   onClick={() => (setStateImg())}></i>
-    
-              <i class="bx bx-link"></i>
+
+              <i class="bx bx-link" ></i>
         
           </div>
         </div>

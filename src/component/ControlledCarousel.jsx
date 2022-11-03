@@ -14,7 +14,7 @@ function ControlledCarousel(props) {
   const [...wrList] = props.urllist;
 
   const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+    setimageChooseUrl(selectedIndex);
   };
 
   return (
